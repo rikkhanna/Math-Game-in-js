@@ -1,0 +1,147 @@
+body{
+	height: 100%;
+	background: linear-gradient(to right,#edebbe,white,#b4fae0,#0088ff);
+}
+#container{
+	width: 850px;
+	height: 500px;
+	margin: 100px auto;
+	background-color: #f0ced8;
+	box-shadow: 0px 0 30px 0.5px  rgba(0,0,0,0.6);
+	padding: 10px;
+	position: relative;
+}
+#score{
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #b8cde0;
+	position: absolute;
+	left: 790;
+	box-shadow: 0px 0 20px 0.3px  rgba(0,0,0,0.2);
+	cursor: pointer;
+	user-select: none;
+}
+/*
+#score:active{
+	margin-top: 4px;
+	
+}
+*/
+#correct{
+	text-align: center;
+	width: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #b8cde0;
+	position: absolute;
+	left: 400;
+	margin-top: 20px;
+	outline: none;
+	background-color: limegreen;
+	box-shadow: 0px 0px 0px 0.5px ;
+	display: none;
+}
+#wrong{
+	text-align: center;
+	width: 50px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #b8cde0;
+	position: absolute;
+	left: 400;
+	margin-top: 20px;
+	outline: none;
+	background-color: #f00540;
+	box-shadow: 0px 0px 0px 0.5px ;
+	display: none;
+}
+#question{
+	width: 500px;
+	height: 200px;
+	margin: 90px  175px auto;
+	background: #c8faf8;
+	box-shadow: 0px 0 30px 0.5px  rgba(0,0,0,0.2);
+	font-family: cursive,sans-serif;
+	font-size: 100px;
+	text-align: center;
+	
+}
+#options{
+	width: 500px;
+	height: 110px;
+	margin: 10px auto;
+	border-radius: 10px;
+}
+.box{
+	width: 85px;
+	height: 80px;
+	margin: 15px 19px auto;
+	float: left;
+	border-radius: 10px;
+	background-color: grey;
+	box-shadow: 0px 0 20px 0.3px  rgba(0,0,0,0.2);
+	cursor: pointer;
+	animation: background 0.5s ease;
+	transition: background 0.6s;
+	text-align: center;
+	position: relative;
+	font-family: cursive;
+	font-size: 50px;
+	line-height: 80px;
+	transition: all 0.2s; 
+}
+.box:hover,#startReset:hover{
+	background-color: #c8faf8;
+	animation-duration: 100ms;
+	animation-delay: 200ms;
+}
+.box:active{
+	top: 4px;
+}
+#startReset{
+	text-align: center;
+	position: absolute;
+	left: 385;
+	padding: 10px;
+	border-radius: 10px;
+	user-select: none;
+	background: linear-gradient(to right,#edebbe,#0088ff);
+	cursor: pointer;
+}
+#startReset:active{
+	margin-top: 4px;
+}
+#timeRemaining{
+	text-align: center;
+	position: absolute;
+	left: 650;
+	top: 430;
+	padding: 10px;
+	background-color: #b8cde0;
+	box-shadow: 0px 0 20px 0.3px  rgba(0,0,0,0.2);
+	border-radius: 10px;
+	user-select: none;
+	font-family: sans-serif;
+	display:none;
+	outline: none;
+}
+#gameOver{
+	text-align: center;
+	width: 640px;
+	height: 250px;
+	position: absolute;
+	top: 120;
+	bottom: 220;
+	left: 115;
+	background: linear-gradient(#f7c84f,#fa9755,#f07143);
+	border-radius: 20px;
+	box-shadow: 0px 0 20px 0.3px  rgba(0,0,0,0.2);
+/*	display: none;*/
+	z-index: 10;
+	user-select: none;
+	font-family: sans-serif;
+	font-size: 3em;
+	color: white;
+	display: none;
+}
